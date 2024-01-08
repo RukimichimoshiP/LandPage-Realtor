@@ -1,3 +1,17 @@
+/*#region animation*/
+@keyframes arrowdown{
+    45% {
+        transform: translate(0, 10px);
+    }
+    90%{
+        transform: translate(0, -10px);
+    }
+    100%{
+        transform: translate(0)
+    }
+}
+/*#endregion animation*/
+
 /*#region reset*/
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
 
@@ -5,6 +19,7 @@
     --purple-button: #B878C5;
     --white: #fff;
     --gray: #aaa;
+    --background-houses: #081828;
 }
 
 *{
@@ -72,6 +87,7 @@ header #container-left #container-text button{
     cursor: pointer;
 }
 header #container-left #container-text #button button:hover{
+    transform: scale(95%);
     box-shadow: inset 0 0 15px black;
     font-size: 1em;
 }
@@ -95,7 +111,112 @@ header #container-right{
     height: 100%;
     filter: brightness(0%);
 }
+
+#arrow-button{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+
+#arrow-button a button{
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    opacity: .5;
+    background: none;
+    cursor: pointer;
+    animation: arrowdown 4s ease infinite;
+}
+#arrow-button a button:hover{
+    opacity: .8;
+}
+
+#arrow-button a button img{
+    width: 50px;
+}
+
 /*#endregion header*/
+
+/*#region main*/
+/*#region houses*/
+#houses{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: var(--background-houses);
+}
+
+#houses #contact-icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#houses #contact-icons .icons button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#houses #contact-icons .icons button:hover > svg{
+    transform: scale(110%);
+}
+
+#houses #contact-icons .icons button svg{
+    width: 50px;
+    color: var(--purple-button);
+}
+
+#houses h2{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#houses #cart-houses{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#houses #cart-houses .cart .img img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#houses #cart-houses .cart .img img:hover{
+    transform: scale(105%);
+}
+
+#houses #cart-houses .cart p {
+    color: var(--white);
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#houses #cart-houses .cart button{
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--purple-button);
+    color: var(--white);
+    font-size: 1.2em;
+    font-weight: 700;
+    box-shadow: 0 0 18px var(--purple-button);
+    cursor: pointer;
+
+}
+#houses #cart-houses .cart button:hover{
+    transform: scale(95%);
+    box-shadow: inset 0 0 15px black;
+    font-size: 1em;
+}
+/*#endregion houses*/
+/*#endregion main*/
 
 /*#region breakpoints*/
 @media (max-width: 1050px){
@@ -106,9 +227,24 @@ header #container-right{
         width: 100%;
     }
 }
+
+@media (max-width: 900px){
+    #houses #cart-houses{
+        flex-direction: column;
+        gap: 20px;
+    }
+    #houses #cart-houses .cart button{
+        width: max(200px, 45%);
+    }
+}
+
 @media (max-width: 580px){
     header #container-left #container-text h1{
         font-size: 2em;
+    }
+
+    #arrow-button{
+        left: 42%;
     }
 }
 /*#endregion breakpoints*/
