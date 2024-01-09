@@ -18,6 +18,7 @@
 
 :root{
     --purple-button: #B878C5;
+    --purple-dark: #b13bc9;
     --white: #fff;
     --gray: #aaa;
     --background-houses: #081828;
@@ -273,6 +274,39 @@ header #container-right{
     font-size: 1em;
 }
 /*#endregion taklto*/
+
+/*#region profile*/
+#profile{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.7)), url('../img/Perfil-WallPaper.jpg');
+    background-position: top center;
+    background-size: cover;
+}
+
+#profile #profile-img img{
+    width: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#profile #profile-img img:hover{
+    transform: scale(105%);
+    filter: drop-shadow(-10px 10px 20px var(--purple-button));
+}
+
+#profile #text-profile{
+    width: min(800px, 95%);
+    font-size: 2em;
+    hyphens: auto;
+}
+
+#profile #text-profile p strong{
+    color: var(--purple-dark);
+}
+/*#endregion profile*/
+
 /*#endregion main*/
 
 /*#region breakpoints*/
@@ -282,6 +316,10 @@ header #container-right{
     }
     header #container-left{
         width: 100%;
+    }
+
+    #profile{
+        flex-direction: column;
     }
 }
 
@@ -302,6 +340,10 @@ header #container-right{
 
     #arrow-button{
         left: 42%;
+    }
+
+    #profile #text-profile{
+        font-size: 1em;
     }
 }
 
