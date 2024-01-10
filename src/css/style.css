@@ -1,3 +1,8 @@
+/*#region imports*/
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+/*#endregion imports*/
+
 /*#region animation*/
 @keyframes arrowdown{
     45% {
@@ -13,9 +18,6 @@
 /*#endregion animation*/
 
 /*#region reset*/
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
-
 :root{
     --purple-button: #B878C5;
     --purple-dark: #b13bc9;
@@ -23,6 +25,7 @@
     --gray: #aaa;
     --background-houses: #081828;
     --background-gradient-talkto: #283848;
+    --button-green: #B8F8A8;
 }
 
 *{
@@ -30,6 +33,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Cardo', serif;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 /*#endregion reset*/
 
@@ -307,6 +314,114 @@ header #container-right{
 }
 /*#endregion profile*/
 
+/*#region form*/
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-color: var(--background-houses);
+}
+
+#form #title-form{
+    text-align: center;
+}
+#form #title-form h2{
+    color: white;
+    font-family: 'Space Mono';
+    font-size: 2.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+#form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 20px;
+    width: 100%;
+}
+
+#form form input{
+    width: min(800px, 80%);
+    height: 50px;
+    font-size: 1.5em;
+    padding-left: 15px;
+    border: none;
+    border-radius: 5px;
+}
+#form form .text:focus{
+    outline: none;
+    box-shadow: 0 5px 25px var(--purple-dark);
+}
+
+#form form #select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form form #select label{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#form form #select select{
+    height: 50px;
+    width: 95%;
+    text-align: center;
+    font-family: 'Space Mono';
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#form form #box-checkbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#form form #box-checkbox #title-checkbox{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+#form form #box-checkbox #checkbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#form form #box-checkbox #checkbox div input{
+    cursor: pointer;
+}
+
+#form form #box-checkbox #checkbox div label{
+    font-family: 'Space Mono';
+}
+
+#form form #button-form{
+    background-color: var(--button-green);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#form form #button-form:hover{
+    background-color: var(--purple-button);
+    transform: scale(95%);
+    box-shadow: inset 0 0 15px black;
+    font-size: 1em;
+}
+/*#endregion form*/
+
 /*#endregion main*/
 
 /*#region breakpoints*/
@@ -333,6 +448,12 @@ header #container-right{
     }
 }
 
+@media (max-width: 800px){
+    #form h2{
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 580px){
     header #container-left #container-text h1{
         font-size: 2em;
@@ -351,6 +472,10 @@ header #container-right{
     #talkto #talkto-text h3 span{
         display: block;
         font-size: 3rem;
+    }
+
+    #form form .text{
+        font-size: 1em;
     }
 }
 /*#endregion breakpoints*/

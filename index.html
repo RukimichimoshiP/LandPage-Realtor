@@ -108,6 +108,66 @@
             </div>
         </section>
         <!-- End Profile -->
+
+        <!-- Form -->
+        <section id="form">
+            <div id="title-form">
+                <h2>Preencha os dados para contato</h2>
+            </div>
+            <form>
+                <input type="text" name="name" id="name" placeholder="Nome" class="text" required>
+                <input type="tel" name="phone" id="phone" placeholder="Telefone" class="text" required>
+                <input type="email" name="email" id="email" placeholder="Email" class="text" required>
+                <input type="text" name="plant" id="plant" placeholder="Qual a planta de interesse?" class="text" required>
+                <div id="select">
+                    <label for="town-select">Selecione a cidade desejada</label>
+                    <select name="town" id="town-select">
+                        <option value="">--Selecione a cidade--</option>
+                        <option value="goiania">Goiânia</option>
+                        <option value="aparecida-de-goiania">Aparecida de Goiânia</option>
+                        <option value="anapolis">Anápolis</option>
+                        <option value="rio-verde">Rio Verde</option>
+                        <option value="aguas-lindas-de-goias">Águas Lindas de Goiás</option>
+                        <option value="luziania">Luziânia</option>
+                        <option value="valparaiso-de-goias">Valparaíso de Goiás</option>
+                        <option value="senador-canedo">Senador Canedo</option>
+                        <option value="trindade">Trindade</option>
+                        <option value="formosa">Formosa</option>
+                        <option value="catalao">Catalão</option>
+                        <option value="itumbiara">Itumbiara</option>
+                        <option value="planaltina">Planaltina</option>
+                        <option value="jatai">Jataí</option>
+                        <option value="novo-gama">Novo Gama</option>
+                        <option value="caldas-novas">Caldas Novas</option>
+                        <option value="cidade-ocidental">Cidade Ocidental</option>
+                        <option value="goianesia">Goianésia</option>
+                        <option value="santo-antonio-do-descoberto">Santo Antonio do Descoberto</option>
+                        <option value="goianira">Goianira</option>
+                        <option value="mineiros">Mineiros</option>
+                        <option value="cristalina">Cristalina</option>
+                        <option value="inhumas">Inhumas</option>
+                        <option value="morrinhos">Morrinhos</option>
+                    </select>
+                </div>
+
+                <div id="box-checkbox">
+                    <label for="checkbox" id="title-checkbox">Como você gostaria de ser contactado(a)</label>
+                    <div id="checkbox">
+                        <div>
+                            <input type="checkbox" name="contact-email" id="contact-email">
+                            <label for="contact-email">Email</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="contact-phone" id="contact-phone">
+                            <label for="contact-phone">Telefone</label>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="button" id="button-form" value="&gt;&gt;enviar&lt;&lt;">
+            </form>
+        </section>
+        <!-- End Form -->
     </main>
     <!-- EndMain -->
 </body>
