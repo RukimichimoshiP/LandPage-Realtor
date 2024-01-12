@@ -26,6 +26,8 @@
     --background-houses: #081828;
     --background-gradient-talkto: #283848;
     --button-green: #B8F8A8;
+    --background-footer: #24262b;
+    --background-black: #000;
 }
 
 *{
@@ -408,13 +410,18 @@ header #container-right{
     font-family: 'Space Mono';
 }
 
-#form form #button-form{
+#form form button{
+    width: min(800px, 80%);
+    height: 50px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 5px;
     background-color: var(--button-green);
     font-size: 1.2em;
     text-transform: uppercase;
     cursor: pointer;
 }
-#form form #button-form:hover{
+#form form button:hover{
     background-color: var(--purple-button);
     transform: scale(95%);
     box-shadow: inset 0 0 15px black;
@@ -423,6 +430,77 @@ header #container-right{
 /*#endregion form*/
 
 /*#endregion main*/
+
+/*#region footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: var(--background-footer);
+}
+
+footer #social-media{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+footer #social-media div a:hover > svg{
+    transform: scale(105%);
+    filter: drop-shadow(-5px 5px 25px var(--purple-button));
+}
+
+footer #social-media div svg{
+    width: 100px;
+}
+
+footer #text-footer{
+    width: 100%;
+    color: var(--white);
+    font-family: 'Space Mono';
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 0;
+    border-top: 5px solid var(--background-gradient-talkto);
+    background-color: var(--background-black);
+}
+/*#endregion footer*/
+
+/*#region modal*/
+/* .container-modal{
+    width: min(750px, 100%);
+    height: min(600px, 100vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: var(--purple-dark);
+}
+
+.container-modal .modal{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+    background-color: var(--gray);
+}
+
+.container-modal .modal div{
+    width: 60%;
+}
+
+.container-modal .modal p{
+    hyphens: auto;
+} */
+/*#endregion modal*/
 
 /*#region breakpoints*/
 @media (max-width: 1050px){

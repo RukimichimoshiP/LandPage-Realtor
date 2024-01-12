@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <title>Corretagem - Corretor Rosa</title>
+
+    <script src="src/js/scritps.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -15,7 +17,7 @@
                 <h1>Encontraremos um lar para você chamar de seu!</h1>
                 <p id="desc">O imóvel ideal para você. Trabalhamos com as maiores incorporadoras de Goiás</p>
                 <div id="button">
-                    <button>Receba uma cotação gratuíta</button>
+                    <a href="#form"><button>Receba uma cotação gratuíta</button></a>
                 </div>
                 <p id="creci">&#x2713;Corretor Fernando - Creci: 201926-F</p>
             </div>
@@ -45,18 +47,22 @@
         <section id="houses">
             <div id="contact-icons">
                 <div id="whatsapp" class="icons">
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                        </svg>
-                    </button>
+                    <a href="https://api.whatsapp.com/send?phone=5562996971538&text=Ol%C3%A1%20Victor%20Revoredo,%20gostaria%20de%20um%20consultoria%20para%20adquirir%20meu%20im%C3%B3vel!" target="_blank">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>
+                        </button>
+                    </a>
                 </div>
                 <div id="email" class="icons">
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-                        </svg>
-                    </button>
+                    <a href="#form">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                            </svg>
+                        </button>
+                    </a>
                 </div>
             </div>
             <h2>O imóvel perfeito para Você</h2>
@@ -66,21 +72,21 @@
                         <img src="src/img/casa-verde-e-amarela.jpg" alt="Casa Verde e Amarelo">
                     </div>
                     <p>Casa Verde e Amarelo</p>
-                    <button>Saiba mais</button>
+                    <button id="button-yellowgree">Saiba mais</button>
                 </div>
                 <div class="cart" id="middle-class">
                     <div class="img">
                         <img src="src/img/casa-media.jpg" alt="Casa Classe Média">
                     </div>
                     <p>Médio Padrão</p>
-                    <button>Saiba mais</button>
+                    <button id="button-middle-class">Saiba mais</button>
                 </div>
                 <div class="cart" id="high-class">
                     <div class="img">
                         <img src="src/img/casa-alta.jpg" alt="Casa Alto Padrão">
                     </div>
                     <p>Alto Padrão</p>
-                    <button>Saiba mais</button>
+                    <button id="button-high-class">Saiba mais</button>
                 </div>
             </div>
         </section>
@@ -94,7 +100,7 @@
                 <p>Temos uma vasta carteira de clientes e imóveis em Goiâs. Os melhores imóveis nas melhores localizações, para moradia ou investimento.</p>
             </div>
 
-            <button>Fale com um Especialista</button>
+            <a href="https://api.whatsapp.com/send?phone=5562996971538&text=Ol%C3%A1%20Victor%20Revoredo,%20gostaria%20de%20um%20consultoria%20para%20adquirir%20meu%20im%C3%B3vel!" target="_blank"><button>Fale com um Especialista</button></a>
         </section>
         <!-- End Talk To -->
 
@@ -115,10 +121,10 @@
                 <h2>Preencha os dados para contato</h2>
             </div>
             <form>
-                <input type="text" name="name" id="name" placeholder="Nome" class="text" required>
-                <input type="tel" name="phone" id="phone" placeholder="Telefone" class="text" required>
-                <input type="email" name="email" id="email" placeholder="Email" class="text" required>
-                <input type="text" name="plant" id="plant" placeholder="Qual a planta de interesse?" class="text" required>
+                <input type="text" name="name" id="name" placeholder="Nome" class="text" >
+                <input type="tel" name="phone" id="phone" placeholder="Telefone" class="text" >
+                <input type="email" name="email" id="email" placeholder="Email" class="text" >
+                <input type="text" name="plant" id="plant" placeholder="Qual a planta de interesse?" class="text" >
                 <div id="select">
                     <label for="town-select">Selecione a cidade desejada</label>
                     <select name="town" id="town-select">
@@ -154,21 +160,50 @@
                     <label for="checkbox" id="title-checkbox">Como você gostaria de ser contactado(a)</label>
                     <div id="checkbox">
                         <div>
-                            <input type="checkbox" name="contact-email" id="contact-email">
+                            <input type="checkbox" name="contact-email" id="contact-email" value="Email">
                             <label for="contact-email">Email</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="contact-phone" id="contact-phone">
+                            <input type="checkbox" name="contact-phone" id="contact-phone" value="Telefone">
                             <label for="contact-phone">Telefone</label>
                         </div>
                     </div>
                 </div>
 
-                <input type="button" id="button-form" value="&gt;&gt;enviar&lt;&lt;">
+                <button id="submit">&gt;&gt;enviar&lt;&lt;</button>
             </form>
         </section>
         <!-- End Form -->
     </main>
-    <!-- EndMain -->
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <footer>
+        <div id="social-media">
+            <div id="github">
+                <a href="https://github.com/RukimichimoshiP" target="_blank"><svg viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;stroke:#aaa;stroke-linecap:round;stroke-linejoin:round;fill-rule:evenodd;}</style></defs><path class="cls-1" d="M24,2.5a21.5,21.5,0,0,0-6.8,41.9c1.08.2,1.47-.46,1.47-1s0-1.86,0-3.65c-6,1.3-7.24-2.88-7.24-2.88A5.7,5.7,0,0,0,9,33.68c-1.95-1.33.15-1.31.15-1.31a4.52,4.52,0,0,1,3.29,2.22c1.92,3.29,5,2.34,6.26,1.79a4.61,4.61,0,0,1,1.37-2.88c-4.78-.54-9.8-2.38-9.8-10.62a8.29,8.29,0,0,1,2.22-5.77,7.68,7.68,0,0,1,.21-5.69s1.8-.58,5.91,2.2a20.46,20.46,0,0,1,10.76,0c4.11-2.78,5.91-2.2,5.91-2.2a7.74,7.74,0,0,1,.21,5.69,8.28,8.28,0,0,1,2.21,5.77c0,8.26-5,10.07-9.81,10.61a5.12,5.12,0,0,1,1.46,4c0,2.87,0,5.19,0,5.9s.39,1.24,1.48,1A21.5,21.5,0,0,0,24,2.5"></path></g></svg></a>
+            </div>
+            <div id="linkedin">
+                <a href="https://www.linkedin.com/in/victor-revoredo-146a98215/" target="_blank"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M22 3.47059V20.5294C22 20.9194 21.845 21.2935 21.5692 21.5693C21.2935 21.8451 20.9194 22 20.5294 22H3.47056C3.08053 22 2.70648 21.8451 2.43069 21.5693C2.15491 21.2935 1.99997 20.9194 1.99997 20.5294V3.47059C1.99997 3.08056 2.15491 2.70651 2.43069 2.43073C2.70648 2.15494 3.08053 2 3.47056 2H20.5294C20.9194 2 21.2935 2.15494 21.5692 2.43073C21.845 2.70651 22 3.08056 22 3.47059V3.47059ZM7.88232 9.64706H4.94115V19.0588H7.88232V9.64706ZM8.14703 6.41176C8.14858 6.18929 8.10629 5.96869 8.02258 5.76255C7.93888 5.55642 7.81539 5.36879 7.65916 5.21039C7.50294 5.05198 7.31705 4.92589 7.1121 4.83933C6.90715 4.75277 6.68715 4.70742 6.46468 4.70588H6.41173C5.95931 4.70588 5.52541 4.88561 5.20549 5.20552C4.88558 5.52544 4.70585 5.95934 4.70585 6.41176C4.70585 6.86419 4.88558 7.29809 5.20549 7.61801C5.52541 7.93792 5.95931 8.11765 6.41173 8.11765V8.11765C6.63423 8.12312 6.85562 8.0847 7.06325 8.00458C7.27089 7.92447 7.46071 7.80422 7.62186 7.65072C7.78301 7.49722 7.91234 7.31346 8.00245 7.10996C8.09256 6.90646 8.14169 6.6872 8.14703 6.46471V6.41176ZM19.0588 13.3412C19.0588 10.5118 17.2588 9.41177 15.4706 9.41177C14.8851 9.38245 14.3021 9.50715 13.7798 9.77345C13.2576 10.0397 12.8142 10.4383 12.4941 10.9294H12.4117V9.64706H9.64703V19.0588H12.5882V14.0529C12.5457 13.5403 12.7072 13.0315 13.0376 12.6372C13.368 12.2429 13.8407 11.9949 14.3529 11.9471H14.4647C15.4 11.9471 16.0941 12.5353 16.0941 14.0176V19.0588H19.0353L19.0588 13.3412Z" stroke="#aaa" stroke-linejoin="round"></path></g></svg></a>
+            </div>
+        </div>
+        <dev id="text-footer">
+            <p>Site e designe criado por Victor com intuito de aprendizado, links para acesso ao Linkedin e Github logo acima!</p>
+        </dev>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Modal -->
+    <!-- <section class="container-modal" id="modal-yellowgreen">
+        <div class="modal">
+            <h1>Casa Verde e Amarelo</h1>
+            <div>
+                <p>O programa Minha Casa, Minha Vida tem sido uma solução eficaz para tornar o sonho da casa própria uma realidade acessível a muitos brasileiros. Com casas e apartamentos oferecidos a preços mais acessíveis no mercado, o programa proporciona uma oportunidade única de conquistar um lar com custos mais baixos.</p>
+            </div>
+        </div>
+
+        <button id="close-yellowgreen">Sair</button>
+    </section> -->
+    <!-- End Modal -->
 </body>
 </html>
